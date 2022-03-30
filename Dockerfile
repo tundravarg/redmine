@@ -1,4 +1,4 @@
-FROM debian:stable
+FROM debian:11.3
 
 WORKDIR /root
 
