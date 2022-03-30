@@ -7,6 +7,6 @@
 docker run \
     -it \
     -p 5432:5432 \
-    -p 3000:3000 \
+    -p 3072:3000 \
     -v "$(pwd)/share:/root/share" \
     redmine
