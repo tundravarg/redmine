@@ -4,7 +4,7 @@ WORKDIR /root
 
 RUN apt update && apt -y full-upgrade
 
-RUN apt install -y net-tools less mc vim
+RUN apt install -y procps net-tools less mc vim
 
 RUN apt install -y postgresql
 COPY files/postgresql.conf files/pg_hba.conf /etc/postgresql/13/main/
