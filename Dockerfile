@@ -13,7 +13,7 @@ RUN service postgresql start && su postgres -c "psql -c \"ALTER USER postgres PA
 
 RUN apt install -y ruby-full build-essential libpq-dev
 ADD https://www.redmine.org/releases/redmine-5.0.0.tar.gz /opt/
-COPY files/setup-redmine.sh files/database.yml files/redmine.sql ./
+COPY files/setup-redmine.sh files/database.yml files/redmine.sql files/redmine.sh ./
 RUN bash setup-redmine.sh
 
 EXPOSE 5432

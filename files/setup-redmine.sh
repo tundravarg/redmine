@@ -22,4 +22,7 @@ bundle exec rake generate_secret_token &&
 RAILS_ENV=production bundle exec rake db:migrate &&
 RAILS_ENV=production REDMINE_LANG=en bundle exec rake redmine:load_default_data &&
 
+mv $HOME/redmine.sh ./ &&
+chmod ugo+x redmine.sh &&
+
 echo "DONE" || ( echo "FAIL"; exit 1 )
