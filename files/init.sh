@@ -9,4 +9,6 @@ service postgresql start &&
 
 cd /opt/redmine && bundle exec rails server -u webrick -e production
 
-echo STARTED && bash || echo FAIL
+echo STARTED || echo FAIL
+
+# bash
